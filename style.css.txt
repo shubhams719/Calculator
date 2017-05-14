@@ -1,0 +1,20 @@
+.input1{
+  height:30px;
+  width:208px;
+}
+.full{
+  height:270px;
+  width:212px;
+  background-color:white;
+  margin:auto;
+}
+.number{
+  height:50px;
+  width:50px;
+  border-radius:20px;
+}
+.Clear{
+  height:50px;
+  width:50px;
+  border-radius:20px;
+}
