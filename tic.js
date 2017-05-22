@@ -10,8 +10,7 @@ initEventHandlers();
 function checkwin(board) {
     for(var i=0;i<3;i++){
     var countx=0;
-    var counto=0;
-    var countu=0;    
+    var counto=0;    
     for(var j=0;j<3;j++){
 
     if(board[i][j] === 'X'){
@@ -20,23 +19,19 @@ function checkwin(board) {
     else if(board[i][j] === 'O'){
         counto= counto + 1;
     }
-        else{
-            countu = countu + 1;
-        }
     }
-        if(countx == 2 && countu == 1 && flag == 0){
+        if(countx == 3 && flag == 1){
         alert("X wins")
         return true;
       }
-    if(counto == 2 && countu == 1 && flag == 1){
+    if(counto == 3 && flag == 0){
         alert("O wins")
         return true;
       }
   }
    for(var i=0;i<3;i++){
     var countx=0;
-    var counto=0;
-    var countu=0;    
+    var counto=0;   
     for(var j=0;j<3;j++){
 
     if(board[j][i] === 'X'){
@@ -45,22 +40,18 @@ function checkwin(board) {
     else if(board[j][i] === 'O'){
         counto= counto + 1;
     }
-        else{
-            countu = countu + 1;
-        }
     }
-        if(countx == 2 && countu == 1 && flag == 0){
+        if(countx == 3 && flag == 1){
         alert("X wins" )
         return true;
       }
-    if(counto == 2 && countu == 1 && flag == 1){
+    if(counto == 3 && flag == 0){
         alert("O wins")
         return true;
       }
   }
     var countx=0;
-    var counto=0;
-    var countu=0;    
+    var counto=0;   
     for(var i=0;i<3;i++){
     if(board[i][i] === 'X'){
       countx= countx + 1;
@@ -68,22 +59,18 @@ function checkwin(board) {
     else if(board[i][i] === 'O'){
         counto= counto + 1;
     }
-        else{
-            countu = countu + 1;
-        }
     
-        if(countx == 2 && countu == 1 && flag == 0){
+        if(countx == 3 && flag == 1){
         alert("X wins")
         return true;
       }
-    if(counto == 2 && countu == 1 && flag == 1){
+    if(counto == 3 && flag == 0){
         alert("O wins")
         return true;
       }
   }
     var countx=0;
-    var counto=0;
-    var countu=0;    
+    var counto=0;  
     for(var i=0,j=2;i<3,j>=0;i++,j--){
     if(board[j][i] === 'X'){
       countx= countx + 1;
@@ -91,15 +78,12 @@ function checkwin(board) {
     else if(board[j][i] === 'O'){
         counto= counto + 1;
     }
-        else{
-            countu = countu + 1;
-        }
     
-        if(countx == 2 && countu == 1 && flag == 0){
+        if(countx == 3 && flag == 1){
         alert("X wins")
         return true;
       }
-    if(counto == 2 && countu == 1 && flag == 1){
+    if(counto == 3 && flag == 0){
         alert("O wins")
         return true;
       }
